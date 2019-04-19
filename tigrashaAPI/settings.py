@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tigrashaAPI_development',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
     }
 }
 
