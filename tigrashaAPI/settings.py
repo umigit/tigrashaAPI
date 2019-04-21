@@ -25,7 +25,7 @@ SECRET_KEY = 'b%g=&(7)ws=s+^bi55%p3ui@ufa(bp%0x5cg%3a1ch39o061x8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS=['127.0.0.1', 'localhost']
+ALLOWED_HOSTS=['127.0.0.1', 'localhost', '118.27.15.65']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'api',
     'storages',
     'rest_framework',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [
