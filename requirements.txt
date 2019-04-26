@@ -1,10 +1,12 @@
 boto3==1.9.133
 botocore==1.12.133
 Django==2.1.8
+django-cors-headers==2.5.2
 django-filter==2.1.0
 django-storages==1.7.1
 djangorestframework==3.9.2
 docutils==0.14
+gunicorn==19.9.0
 jmespath==0.9.4
 mysqlclient==1.4.2.post1
 Pillow==6.0.0
