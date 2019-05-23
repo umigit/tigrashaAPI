@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-ROOT_URLCONF = 'tigrashaAPI.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tigrashaAPI.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
