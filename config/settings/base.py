@@ -23,7 +23,7 @@ AUTH_USER_MODEL = 'api.User'
 SECRET_KEY = 'b%g=&(7)ws=s+^bi55%p3ui@ufa(bp%0x5cg%3a1ch39o061x8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
 
 ALLOWED_HOSTS=['127.0.0.1', 'localhost', '118.27.15.65', 'tigrasha-api.die-katze.net']
 
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/usr/share/nginx/html/static'
+
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
