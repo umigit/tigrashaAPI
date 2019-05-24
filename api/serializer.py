@@ -10,4 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ('id', 'title', 'name', 'place', 'date', 'detail', 'address', 'latitude', 'longitude', 'image', 'created_at', 'updated_at')
+        fields = ('id', 'title', 'name', 'place', 'date', 'detail', 'address', 'latitude', 'longitude', 'image', 'created_at', 'updated_at', 'user')
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
